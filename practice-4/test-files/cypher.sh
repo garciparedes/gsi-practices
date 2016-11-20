@@ -17,8 +17,8 @@ do
         echo
         echo $1 $i-$j
 
-        time openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password}
-        time openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password}
+        time openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password} | tee -a encrypted/$1/readme.md
+        time openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password} | tee -a encrypted/$1/readme.md
 
     done
 done
