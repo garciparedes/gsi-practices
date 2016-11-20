@@ -1,0 +1,156 @@
+
+
+
+
+random.txt.gz aes-256-ecb
+
+real	0m0.087s
+user	0m0.060s
+sys	0m0.020s
+
+real	0m0.090s
+user	0m0.050s
+sys	0m0.040s
+
+
+
+
+random.txt.gz aes-256-cbc
+
+real	0m0.091s
+user	0m0.070s
+sys	0m0.010s
+
+real	0m0.188s
+user	0m0.060s
+sys	0m0.020s
+
+
+
+
+random.txt.gz aes-256-cfb
+
+real	0m0.088s
+user	0m0.050s
+sys	0m0.040s
+
+real	0m0.087s
+user	0m0.040s
+sys	0m0.040s
+
+
+
+
+random.txt.gz des-ecb
+
+real	0m0.113s
+user	0m0.080s
+sys	0m0.030s
+
+real	0m0.143s
+user	0m0.090s
+sys	0m0.020s
+
+
+
+
+random.txt.gz des-cbc
+
+real	0m0.106s
+user	0m0.090s
+sys	0m0.010s
+
+real	0m0.829s
+user	0m0.070s
+sys	0m0.030s
+
+
+
+
+random.txt.gz des-cfb
+
+real	0m0.108s
+user	0m0.070s
+sys	0m0.030s
+
+real	0m0.180s
+user	0m0.070s
+sys	0m0.050s
+
+
+
+
+random.txt.gz camellia-256-ecb
+
+real	0m0.097s
+user	0m0.070s
+sys	0m0.020s
+
+real	0m0.097s
+user	0m0.060s
+sys	0m0.030s
+
+
+
+
+random.txt.gz camellia-256-cbc
+
+real	0m0.095s
+user	0m0.070s
+sys	0m0.020s
+
+real	0m0.143s
+user	0m0.070s
+sys	0m0.030s
+
+
+
+
+random.txt.gz camellia-256-cfb
+
+real	0m0.095s
+user	0m0.080s
+sys	0m0.010s
+
+real	0m0.095s
+user	0m0.070s
+sys	0m0.020s
+
+
+
+
+random.txt.gz bf-ecb
+
+real	0m0.092s
+user	0m0.060s
+sys	0m0.030s
+
+real	0m0.095s
+user	0m0.070s
+sys	0m0.020s
+
+
+
+
+random.txt.gz bf-cbc
+
+real	0m0.089s
+user	0m0.050s
+sys	0m0.030s
+
+real	0m0.090s
+user	0m0.060s
+sys	0m0.020s
+
+
+
+
+random.txt.gz bf-cfb
+
+real	0m0.333s
+user	0m0.080s
+sys	0m0.010s
+
+real	0m0.091s
+user	0m0.060s
+sys	0m0.020s
