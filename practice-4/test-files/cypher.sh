@@ -2,14 +2,8 @@
 
 password="password"
 
-CypherAlg[0]="aes-256"
-CypherAlg[1]="des"
-CypherAlg[2]="camellia-256"
-CypherAlg[3]="bf"
-
-CypherMode[0]="ecb"
-CypherMode[1]="cbc"
-CypherMode[2]="cfb"
+CypherAlg=( "aes-256" "des" "camellia-256" "bf")
+CypherMode=( "ecb" "cbc" "cfb")
 
 
 for i in "${CypherAlg[@]}"
