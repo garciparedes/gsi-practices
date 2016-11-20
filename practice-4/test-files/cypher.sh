@@ -2,9 +2,9 @@
 
 password="password"
 
-CypherAlg[0]="AES256"
+CypherAlg[0]="aes-256"
 CypherAlg[1]="des"
-CypherAlg[2]="camellia256"
+CypherAlg[2]="camellia-256"
 CypherAlg[3]="bf"
 
 CypherMode[0]="ecb"
@@ -16,6 +16,15 @@ for i in "${CypherAlg[@]}"
 do
     for j in "${CypherMode[@]}"
     do
-        gpg --cipher-algo $i --output encrypted/$1.$i-$j --symmetric $1
+        mkdir -p encrypted/$1
+        echo
+        echo
+        echo
+        echo
+        echo $1 $i-$j
+
+        time openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password}
+        time openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password}
+
     done
 done
