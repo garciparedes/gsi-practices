@@ -50,27 +50,3 @@ print
 print 'Min possible file size assuming max theoretical compression efficiency:'
 print (ent * fileSize), 'in bits'
 print (ent * fileSize) / 8, 'in bytes'
-
-###  Modifications to file_entropy.py to create the Histogram start here ###
-### by Ken Hartman  www.KennethGHartman.com
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-N = len(freqList)
-
-ind = np.arange(N)  # the x locations for the groups
-width = 1.00        # the width of the bars
-
-#fig = plt.figure()
-fig = plt.figure(figsize=(11,5),dpi=100)
-ax = fig.add_subplot(111)
-rects1 = ax.bar(ind, freqList, width)
-ax.set_autoscalex_on(False)
-ax.set_xlim([0,255])
-
-ax.set_ylabel('Frequency')
-ax.set_xlabel('Byte')
-ax.set_title('Frequency of Bytes 0 to 255\nFILENAME: ' + sys.argv[1])
-
-plt.show()
