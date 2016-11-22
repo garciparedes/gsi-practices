@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 password="password"
 
@@ -20,9 +20,10 @@ do
         echo
         echo
         echo $1 $i-$j
-
-        time openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password}
-        time openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password} 
+        echo "Cipher:"
+        /usr/bin/time -v openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password}
+	echo "Decipher:"
+	/usr/bin/time -v openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password} 
     done
 done
 
