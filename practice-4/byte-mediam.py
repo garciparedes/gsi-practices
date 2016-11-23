@@ -1,10 +1,22 @@
 #!/usr/bin/env python
+
+#
+# Descrition: Calculates Aritmetical Median of argv[1] file.
+#
+# Author:   Sergio García Prado
+#           garciparedes.me
+#
+
 import sys
 
 with open(sys.argv[1], "rb") as f:
-    size, suma, byte = int(), int(), f.read(1)
-    while byte != b"":
-        size += 1
-        suma += int(byte.encode('hex'), 16)
-        byte = f.read(1)
-    print float(suma)/float(size)
+    byteArr = map(ord, f.read())
+    f.close()
+    size = len(byteArr)
+
+    # Median
+    sum = 0
+    for byte in byteArr:
+        sum += byte
+    median = float(sum)/size
+    print median

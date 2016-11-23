@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#
+# Descrition: Obtains performance results of ciphers.
+#
+# Author:   Sergio García Prado
+#           garciparedes.me
+#
+
 password="password"
 
 CypherAlg=( "aes-256" "des" "camellia-256" "bf")
@@ -16,14 +23,11 @@ do
     for j in "${CypherMode[@]}"
     do
         echo
-        echo
-        echo
-        echo
         echo $1 $i-$j
         echo "Cipher:"
         /usr/bin/time -v openssl $i-$j -in $1 -out encrypted/$1/$1.$i-$j -k ${password}
-	echo "Decipher:"
-	/usr/bin/time -v openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password} 
+	    echo "Decipher:"
+        /usr/bin/time -v openssl $i-$j -d -in encrypted/$1/$1.$i-$j -out $1 -k  ${password}
     done
 done
 
