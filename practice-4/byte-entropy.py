@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 #
-# Descrition: Calculates Shannon Entropy of argv[1] file.
+# Description: Calculates Shannon Entropy of argv[1] file.
 #
-# Author:   Sergio García Prado
+# Author:   Sergio Garcia Prado
 #           garciparedes.me
 #
 

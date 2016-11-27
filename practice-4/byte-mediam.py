@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 #
-# Descrition: Calculates Aritmetical Median of argv[1] file.
+# Description: Calculates Aritmetical Median of argv[1] file.
 #
-# Author:   Sergio García Prado
+# Author:   Sergio Garcia Prado
 #           garciparedes.me
 #
 
